@@ -67,7 +67,11 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transform: translate(50%,0) ;
+    transform: translate(100%, 0) ;
+}
+
+body.nav-open nav {
+    transform: translate(0, 0);
 }
 
 nav div {
