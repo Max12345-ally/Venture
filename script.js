@@ -9,7 +9,7 @@ const menuToggleText = menuToggle.querySelector("span")
 const bodyTag = document.querySelector("body")
 
 menuToggle.addEventListener("click", function () {
-    bodyTag.classlist.toggle("nav-open")
+    bodyTag.classList.toggle("nav-open")
 })
 
 // const updateDarkMode = function () {
