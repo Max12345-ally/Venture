@@ -111,3 +111,7 @@ svg {
 svg.spiral {
     border: 2px solid var(--highlight-color);
 }
+
+svg.spiral rect {
+    stroke: var(--highlight-color)
+}

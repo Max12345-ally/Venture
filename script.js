@@ -1,8 +1,3 @@
-// const mqDark = window.matchMedia("(prefers-color-scheme: dark)")
-
-// const darkModeToggle = document.querySelector("a.dark-mode-toggle")
-// const darkModeToggleText = darkModeToggle.querySelector("span")
-
 const menuToggle = document.querySelector("a.menu-toggle")
 const menuToggleText = menuToggle.querySelector("span")
 
@@ -29,14 +24,14 @@ menuToggle.addEventListener("click", function () {
     
 })
 
-// const updateDarkMode = function () {
-//     if (mqDark.matches) {
-//         darkModeToggleText.innerHTML = "Light mode"
-//     } 
-    
-// }
+    const spiralTimeline = gsap. timeline({
+        repeat: -1
+    })
 
-// updateDarkMode()
-// mqDark.addListener(function () {
-//     updateDarkMode()
-// })
+    spiralTimeline
+        .to("svg.spiral rect", { 
+            rotation: 90,
+            transformOrigin: "50% 50%",
+         })
+
+
