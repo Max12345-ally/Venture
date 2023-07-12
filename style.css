@@ -17,7 +17,6 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-
 }
 
 h1 {
@@ -33,10 +32,7 @@ h1 rect {
 a {
     color: var(--text-color);
     text-decoration: none;
-
 }
-
-
 
 a:hover {
     color: var(--highlight-color);
@@ -113,5 +109,11 @@ svg.spiral {
 }
 
 svg.spiral rect {
+    fill: var(--highlight-color);
+    fill-opacity: 0;
     stroke: var(--highlight-color)
+}
+
+svg.spiral rect:hover {
+    fill-opacity: 0.25;  
 }

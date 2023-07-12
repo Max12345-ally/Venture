@@ -29,9 +29,21 @@ menuToggle.addEventListener("click", function () {
     })
 
     spiralTimeline
+        .set("svg.spiral rect", {
+            rotation: 0,
+            transformOrigin: "50% 50%"
+        })
+        .set("svg.spiral rect:nth-child(1)", {
+            rotation: 15
+        })
+        .set("svg.spiral rect:nth-child(3)", {
+            rotation: -15
+        })
         .to("svg.spiral rect", { 
-            rotation: 90,
+            rotation: "+=90",
             transformOrigin: "50% 50%",
+            duration: 4,
+            stagger: -0.25
          })
 
 
