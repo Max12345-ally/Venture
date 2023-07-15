@@ -11,13 +11,18 @@ body {
     font-size: 24px;
     line-height: 40px;
     background-color: var(--main-color);
-    background-image: url(assets/grid.svg);
     color: var(--text-color);
+}
+
+section {
+    background-position: center center;
+    background-image: url(assets/grid.svg);
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100vh; 
 }
+
 
 h1 {
     position: fixed;
@@ -73,7 +78,7 @@ nav {
     top: 0;
     right: 0;
     width: 100%;
-    max-width: 600px;
+    max-width: 400px;
     height: 100%;
     background-color: var(--main-color);
     padding: 48px;
